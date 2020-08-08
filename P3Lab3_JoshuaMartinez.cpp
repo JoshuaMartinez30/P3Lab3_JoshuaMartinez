@@ -1,5 +1,5 @@
 //#include "Libro.cpp"
-#include "Biblioteca.cpp"
+#include "Biblioteca.h"
 //#include "Catalogo.cpp"
 #include <iostream>
 #include <cstring>
