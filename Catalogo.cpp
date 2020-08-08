@@ -1,5 +1,4 @@
 #include "Catalogo.h"
-#include "Libro.h"
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -10,8 +9,8 @@ Libro* Catalogo::getLibro(int posicion){
     return catalogos[posicion];
 }
 
-void Catalogo::setLibro(string titulo_new, string autor_new, int año_lanzamiento_new){
-    catalogos.push_back(new Libro(titulo_new, autor_new, año_lanzamiento_new));
+void Catalogo::setLibro(string titulo_new, string autor_new, int anio_lanzamiento_new){
+    catalogos.push_back(new Libro(titulo_new, autor_new, anio_lanzamiento_new));
 }
 
 string Catalogo::tostring(){

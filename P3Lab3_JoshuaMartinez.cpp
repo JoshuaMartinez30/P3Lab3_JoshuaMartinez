@@ -1,6 +1,6 @@
-#include "Libro.cpp"
+//#include "Libro.cpp"
 #include "Biblioteca.cpp"
-#include "Catalogo.cpp"
+//#include "Catalogo.cpp"
 #include <iostream>
 #include <cstring>
 #include <vector>
@@ -24,7 +24,20 @@ int main(){
         {
             string nombre, ubicacion;
             int piso, estante, seccion;
-            cout<<""<<endl;
+            cout<<"*****Crear biblioteca*****"<<endl;
+            cout<<"->Ingrese nombre: ";
+            cin>>nombre;
+            cout<<"->Ingrese ubicacion: ";
+            cin>>ubicacion;
+            cout<<"Ingrese piso: ";
+            cin>>piso;
+            cout<<"Ingrese estante por piso: ";
+            cin>>estante;
+            cout<<"Ingrese seccion por estante: ";
+            cin>>seccion;
+            Biblioteca b(nombre,ubicacion, piso, estante, seccion);
+            lista.push_back(b);
+            cout<<"Creado con Excito"<<endl;
         }    
         break;
 

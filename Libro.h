@@ -8,7 +8,7 @@ using namespace std;
 class Libro{
     private:
     string titulo, autor;
-    int año_lanzamiento;
+    int anio_lanzamiento;
     public:
     Libro();
     Libro(string , string, int );
@@ -16,8 +16,8 @@ class Libro{
     void settitulo(string);
     string getautor();
     void setautor(string);
-    int getaño_lanzamiento();
-    void setaño_lanzamiento(int);
+    int getanio_lanzamiento();
+    void setanio_lanzamiento(int);
     string tostring();
     ~Libro();
 };

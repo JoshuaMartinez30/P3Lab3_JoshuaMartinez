@@ -1,5 +1,4 @@
 #include "Biblioteca.h"
-#include "Catalogo.h"
 #include <iostream>
 using namespace std;
 Biblioteca::Biblioteca(){   
@@ -64,8 +63,8 @@ void Biblioteca::setseccion(int seccion_new){
     seccion=seccion_new;
 }
 
-void Biblioteca::add(string titulo_new, string autor_new, int año_lanzamiento_new, int piso_new, int estantes_new, int seccion_new){
-    lista_biblioteca[piso_new][estantes_new][seccion_new]->setLibro(titulo_new,autor_new,año_lanzamiento_new);
+void Biblioteca::add(string titulo_new, string autor_new, int anio_lanzamiento_new, int piso_new, int estantes_new, int seccion_new){
+    lista_biblioteca[piso_new][estantes_new][seccion_new]->setLibro(titulo_new,autor_new,anio_lanzamiento_new);
 }
 
 string Biblioteca::tostring(){
